@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block body %}
+<html>
+  <title>Home Page</title>
+  <head>
+    <meta charset = "utf-8">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <style>
+      p{
+      font-family: Sans-Serif;
+      margin: 50px;
+      }
+      p.normal{
+      font-size: 1.5em
+      }
+      p.large{
+      font-size: 2.5em
+      }
+
+      body{
+      background-color: lightpink
+      }
+
+      div{
+      background-color: #EDEDED;
+      width: 750px;
+      padding: 25px;
+      border: 10px solid mediumturquoise;
+      margin: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <br>
+    <br>    
+    <center>
+      <div>
+	<form class = "pure-form pure-form-stacked" method = "POST">
+	  <fieldset>
+	    <p class = "large">
+	      <legend>Weather in your area!<br>(US cities only)</legend>
+	    </p>
+	    <p class = "normal">
+	      <label for = "city">City (ex. Manhattan)</label>
+	      <input name = "city" type = "text" placeholder = "City">
+	      
+	      <label for = "state">State (ex. NY)</label>
+	      <input name = "state" type = "text" placeholder = "State">
+	      <br>
+	      <br>
+	      <button type = "submit" name = "b" class = "pure-button pure-button-primary">Submit</button>
+	    </p>
+	  </fieldset>
+	</form>
+      </div>
+    </center>  
+  </body>
+</html>
+{% endblock %}
