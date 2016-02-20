@@ -4,7 +4,7 @@
     <title>Tina Lee</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="/static/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/static/js/bootstrap.min.css" type="text/css">
     <script src="/static/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery.js"></script>
   </head>
@@ -23,12 +23,12 @@
 	    <a class="navbar-brand" href="/">Tina Lee</a>
 	  </div>
 	  
-	  <div class="navbar-collapse collapse">
+	  <div class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
 	    <ul class="nav navbar-nav">
 	      <li><a href="/about.html">About</a></li>
 	      <li><a href="https://github.com/l-tn3314">GitHub</a></li>
 	      <li>
-		<a href="#" class="dropdown-toggle" data-toggle="dropdown" >Projects<span class="caret"></span></a>
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
 		<ul class="dropdown-menu">
 		  <li><a href="/projects/canvas/index.html">Canvas</a></li>
 		  <li><a href="/projects/invisible_tree/tree.html">Invisible Tree</a></li>
