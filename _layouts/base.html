@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Tina Lee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/static/bootstrap.min.css" type="text/css">
     <script src="/static/bootstrap.min.js"></script>
@@ -27,10 +28,26 @@
 	      <!--<li><a href = "/projects/canvas/index.html">Canvas</a></li>-->
 	      <li><a href="/about.html">About</a></li>
 	      <li><a href="https://github.com/l-tn3314">GitHub</a></li>
+	      <li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown" >Projects<span class="caret"></span></a>
+		<ul class="dropdown-menu">
+		  <li><a href="/projects/canvas/index.html">Canvas</a></li>
+		  <li><a href="/projects/invisible_tree/tree.html">Invisible Tree</a></li>
+		  <li><a href="/projects/login/app.py">Login</a></li>
+		  <li><a href="/projects/login/templates/home.html">Login2</a></li>
+		  <li><a href="/projects/marionette/app.py">Marionette</a></li>
+		  <li><a href="https://github.com/l-tn3314/l-tn3314.github.io/projects/tetris">Tetris</a></li>
+		  <li><a href="/projects/weather/app.py"></a></li>
+		  <li><a href="https://github.com/l-tn3314/UFree"></a></li>
+		</ul>
+	      </li>
 	    </ul>
 	  </div> <!--navbar-collapse-->
 	</div> <!--container-fluid-->
       </nav>
     </div>
+
+    {{content}}
+
   </body>
 </html>
