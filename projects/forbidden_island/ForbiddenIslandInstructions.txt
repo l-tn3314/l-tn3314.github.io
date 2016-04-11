@@ -1,0 +1,98 @@
+					THE
+			            FORBIDDEN
+				      ISLAND
+				       GAME
+
+		        ———————————————————————————————
+
+“You awaken alone, marooned on an island. You cannot recall how you got 
+here, but desperately want to get back home. 
+
+Around you are scattered pieces of machinery, which you suspect are 
+important somehow. Looking up to the peak of the island, you see a 
+somewhat ruined helicopter. How convenient that you are a trained 
+pilot — and mechanic! You notice that the tide is rushing in:
+ soon, the island will be flooded and the helicopter will be underwater. 
+
+Can you collect all the pieces of the helicopter and fly away before 
+it’s too late?”
+
+- Assignment 9, Forbidden Island
+[http://www.ccs.neu.edu/course/cs2510/assignment9.html]
+
+
+
+     ///———————————————————GAMEPLAY INSTRUCTIONS—————————————————\\\
+
+There are 3 types of islands in the Forbidden Island Game: MOUNTAIN, 
+RANDOM, and TERRAIN.
+
+- The MOUNTAIN island is diamond-shaped and built like a mountain, with 
+the height the highest in the center and decreasing as you move away.
+
+- The RANDOM island is diamond-shaped, but each Cell of the island has
+a randomly-generated height.
+
+- The TERRAIN island is randomly-generated terrain, with possible 
+“lakes” in the middle and land jutting out from the sides.
+
+	  	      ———————————————————————————————
+
+Upon initial launch of the game, a TERRAIN island will appear with 
+up to 5 Helicopter parts in randomly selected Cells of land, along 
+with a Helicopter on the highest point of the island.
+
+Every 10 ticks of the game, the Ocean surrounding the island will 
+flood, eventually flooding the entire island - and the Player on it!
+
+Collect all the Helicopter parts and the Helicopter itself while avoiding 
+the water.
+
+		      ———————————————————————————————
+
+A SCUBA SUIT will also be randomly generated on the island. Collect 
+the SCUBA SUIT and activate it using “B” - this will allow the Player
+to swim through flooded Cells for a limited amount of time (displayed
+on screen).
+
+    /———-———————————————-———-SINGLE PLAYER-—-———————————————————\
+
+Player 1 will spawn on a random land Cell on a randomly generated TERRAIN
+island. Use the UP, DOWN, LEFT, and RIGHT arrow keys to move the Player 
+around and collect all of the Helicopter parts BEFORE collecting the 
+Helicopter. Your Score appears in the top left corner and will increase 
+with each step you take - the lower the Score, the better! 
+
+    /———-———————————————-———-MULTIPLAYER-—-———————————————————\
+
+Press “2” to activate multiplayer mode - another Player will be 
+generated in the center of the island. Use the “W”, “A”, “S”, and “D” 
+keys to move this player around and help collect the Helicopter parts. 
+BOTH players must make it to the Helicopter in order to succeed. 
+Player 2’s Score will appear in the top right corner.
+
+   /———-———————————————-———-GAME CONTROLS-—-———————————————————\
+
+MOVE PLAYER 1: UP, DOWN, LEFT, RIGHT
+
+MULTIPLAYER MODE: 2
+
+MOVE PLAYER 2: W, A, S, D
+
+PAUSE/UNPAUSE GAME: P
+
+RESET MOUNTAIN ISLAND: M
+
+RESET RANDOM ISLAND: R
+
+RESET TERRAIN ISLAND: T
+
+ACTIVATE SCUBA SUIT: B
+
+?????????: L
+
+   /———-——————————————————-———-ENDGAME-—-——————————————————————\
+
+You can reset as many times as you want during gameplay, but the world/game
+ends COMPLETELY once you win or lose (i.e., when you successfully collect 
+the Helicopter or when you drown).
