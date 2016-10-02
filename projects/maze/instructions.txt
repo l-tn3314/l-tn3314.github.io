@@ -1,0 +1,115 @@
+				AMAZING!!!!!!!
+			  Amanda Escaba and Tina Lee
+
+Darkness. You are surrounded by darkness. You feel a faint pounding in your 
+head, is it just another headache? Slowly, you blink your eyes open - only 
+to rapidly shut them again, because what you see cannot be real. Again, you 
+slowly open your eyes to see what you are faced with - you are surrounded by 
+giant, looming black walls. But wait - you peer into the distance and see 
+that you are not completely caged in. As you move through the darkness, you
+run into another wall. You turn down another path, only to be faced with 
+another dead end. Suddenly, it hits you: you are trapped in a maze.
+
+     ///———————————————————GAMEPLAY INSTRUCTIONS—————————————————\\\
+
+Launch the game, and the walls will begin being knocked down to reveal a 
+maze. The player will always spawn in the top left corner of the maze, 
+marked green. The goal of the game is to get through the maze and reach the 
+endpoint at the bottom right corner, which is marked purple. An AI will also
+spawn randomly on the maze and will try to get you as you try to
+exit. If the AI reaches your location, you will be frozen and unable to 
+move - unless you somehow start a new game…
+
+Construct a completely new maze with the R key, and construct a vertically 
+or horizontally biased maze with the V and H keys, respectively. Use the 
+directional keys to move the player throughout the maze to reach the end. 
+Toggle the view of the path you have already traversed with the P key. You
+can also find the solution to the maze using DEPTH or BREADTH first search 
+by hitting the N and B keys, respectively. 
+
+Enable multiplayer mode by pressing 2. A random maze will be regenerated, with 
+player 1 in the BOTTOM RIGHT corner and player 2 in the TOP LEFT corner. Control 
+player 2 with the W, A, S, and D keys and player 1 with the UP, DOWN, LEFT, and 
+RIGHT KEYS. Both players must traverse the entire maze and make it to the other 
+side to win the game. 
+
+      /———-———————————————-———-GAME CONTROLS-—-———————————————————\
+
+MOVE PLAYER: UP, DOWN, LEFT, RIGHT
+
+MULTIPLAYER MODE: 2
+
+MOVE PLAYER 2: W, A, S, D
+
+TOGGLE PATH VIEW: P
+
+DEPTH-FIRST SEARCH: N
+
+BREADTH-FIRST SEARCH: B
+
+RESET MAZE: R
+
+VERTICALLY BIASED MAZE: V
+
+HORIZONTALLY BIASED MAZE: H
+
+      /———-———————————————-———-BELLS AND WHISTLES-—-———————————————————\
+
+At any point in time, including as the maze is being animated or after completion 
+of the maze, the user can generate a new maze by pressing the R key.
+
+At any point in time, including as the maze is being animated or after completion 
+of the maze, the user can start a depth or breadth first search by pressing the N 
+or B keys, respectively.
+
+The maze will be initialized as a grid and the user will see an animation of walls 
+being knocked down to reveal the maze.
+
+The user can skip the “knocking down walls” animation and go straight to the maze 
+by pressing the Q key.
+
+The user can generate a new maze with a horizontal bias at any point using the H 
+key, or a maze with a vertical bias using the V key.
+
+Toggle the view of the path you have already visited using the P key.
+
+Enable multiplayer mode by pressing 2. Use the W, A, S, and D keys to control the
+new player. Both players must cross the entire maze and make it to the other side 
+to win the game.
+
+An AI will spawn randomly on the maze at the start of the game and try to get to the 
+player. The bigger the maze, the slower the AI moves. The player will lose the ability
+to move if the AI ever reaches the player. This goes for either player in multiplayer
+mode as well.
+
+      /———-———————————————-———-RELEVANT CLASSES/METHODS-—-———————————————————\
+
+
+1 construct random mazes using kruskal’s algorithm
+	- MAZE CLASS
+		- krus returns minimum spanning tree, side effect: updates hashmap 
+		of reps
+
+2 display maze graphically & animate search for path
+	- MAZE CLASS
+		- makeScene displays the maze
+		- onTick animates the knocking down of walls
+               - search helps with animation
+		- reconstruct returns the correct path to the target cell
+
+3 allow user to choose 1 of 2 algs to find path - bfs or dfs
+	- MAZE CLASS
+		- bfs does breadth first search
+		- dfs does depth first search
+
+4 provide option for designing new random maze
+	- MAZE CLASS
+		- onKeyEvent allows user to design a new random maze (keys R, V, H)
+		- initDraw draws new mazes
+
+5 allow user to traverse maze manually using keys to select next move, preventing illegal
+ moves, notifying user of completion of game
+	- MAZE CLASS
+		- onKeyEvent allows user to traverse the path manually 
+		(UP, DOWN, LEFT, RIGHT)
+

@@ -1,0 +1,58 @@
+.wrapper {
+    padding-left: 30px;
+    padding-right:30px;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    background-color: rgb(50,50,50);
+    padding-top: 5px;;
+    padding-bottom: 5px;
+    z-index: 1;
+    transition: 0.5s;
+    position: fixed;
+    overflow-x: hidden;
+}
+
+.sidenav li {
+    padding-left: 15px;
+    font-size: 20px;
+    color: rgb(240,240,240);
+    display: block;
+    transition: 0.2s;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+}
+
+#reset {
+    color: rgb(255,0,0);
+}
+
+#done {
+    color: rgb(0,255,0);
+}
+
+#lines {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    background-color: #C0C0C0;
+    z-index: 3;
+}
+
+
+#x {
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(240,240,240);
+    position: absolute;
+    right: 15px;
+}
+
+#top {
+    font-size: 35px;
+    color: #6495ED;
+}
